@@ -32,6 +32,7 @@ to move you it will use the libraries mouse and keyboard
 
 # more about the project
 -you can adjust the sesitivity so it matches the ingame 
+
 -you can choose what the buttons do
 # ---------
 the designs i provided aren't the final to see the final check the journal 
