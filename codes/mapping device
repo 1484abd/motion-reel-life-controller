@@ -1,0 +1,114 @@
+#include "BluetoothSerial.h"
+#include <Servo.h>
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#define TRIG_PIN 2
+#define ECHO_PIN 0
+Servo scanner;
+#define SERVO_PIN 8
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+BluetoothSerial SerialBT;
+#define OLED_RST 6
+#define OLED_DC 5
+#define OLED_CS 4
+#define BUTTON_PIN 7
+float f0;
+float f90;
+float f180;
+
+
+Adafruit_SSD1306 display(
+    SCREEN_WIDTH,
+    SCREEN_HEIGHT,
+    &SPI,
+    OLED_DC,
+    OLED_RST,
+    OLED_CS
+);
+void setup() {
+  SerialBT.begin("RoomMapper");
+  Serial.begin(115200);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+  scanner.attach(SERVO_PIN);
+  display.begin(SSD1306_SWITCHCAPVCC);
+  display.clearDisplay();
+  display.display();
+}
+void countdown(){
+
+
+  for(int i = 3; i >= 1; i--) {
+
+    display.clearDisplay();
+
+    display.setTextSize(4);
+    display.setCursor(55,20);
+
+    display.println(i);
+
+    display.display();
+
+    delay(1000);
+  }
+
+  display.clearDisplay();
+  display.display();
+}
+void loop(){
+  if (digitalRead(BUTTON_PIN) == LOW) {
+    scanmotor();
+    Serial.print("0 degrees: ");
+    Serial.println(f0);
+
+    Serial.print("90 degrees: ");
+    Serial.println(f90);
+
+    Serial.print("180 degrees: ");
+    Serial.println(f180);
+    SerialBT.print("0,");
+    SerialBT.println(f0);
+
+    SerialBT.print("90,");
+    SerialBT.println(f90);
+
+    SerialBT.print("180,");
+    SerialBT.println(f180);
+  while(digitalRead(BUTTON_PIN) == LOW);
+    delay(200);
+}
+}
+
+float getDistance() {
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+  long duration = pulseIn(ECHO_PIN, HIGH, 30000);
+  float distance = duration * 0.0343 / 2;
+  return distance; // cm
+}
+
+void scanmotor(){
+  scanner.write(0);
+  delay(500);
+  countdown();
+  f0 = getDistance();
+  
+  delay(1000);
+  scanner.write(90);
+  delay(500);
+  countdown();
+  f90 = getDistance();
+  delay(1000);
+  scanner.write(180);
+  delay(500);
+  countdown();
+  f180 = getDistance();
+  delay(1000);
+
+}
