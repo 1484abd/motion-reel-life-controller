@@ -1,5 +1,11 @@
+---
+title: "Reel life vr"
+author: "abderrhamen"
+description: "you can play your game in reel life by moving"
+created_at: "2026-07-14"
+---
 
-# day 1:
+# july 14: create the idea circuit
 i found an idea and started it
 i got the componnets needed and i will start connecting the components in a software and started building the code (for more look at explain.md) 
 
@@ -22,3 +28,5 @@ now it looks like this :
 now its perfect and we can work with it i think its the finishing idea
 
 now i will work on the room mapper code. i just learned the basics of the code didnt finish it.
+**Total time spent: 5 hours**
+# july 15:coding
