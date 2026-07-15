@@ -52,3 +52,5 @@ be finished i wont count this in my hour counter cause claude did all the work
 i finnaly finished it claude is shit i cant code with it okay i coded half no 90% of the python code with claude but still good thats good
 
 **Total time spent: 3 hours**
+
+i will just hope it works and that i get approoved i spent more time on this than my family
