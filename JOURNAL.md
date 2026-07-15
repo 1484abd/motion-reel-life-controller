@@ -38,7 +38,7 @@ i built this as the room mapper it should map the whole room(only if its rectang
 now it should work perfectly fine and i added the code of the mapper
 
 and i finished the coding it took me like 1 hour only for the mapper the hard one is the code of the headset i will start it now.
-ok i coded the head set this was harder caus ei needed to learn how to code an mpu6050
+ok i coded the head set this was harder cause i needed to learn how to code an mpu6050
 
 <img width="122" height="428" alt="image" src="https://github.com/user-attachments/assets/1df8b89f-a3a3-4819-937c-7bd31c37f371" />
 
@@ -49,4 +49,4 @@ and i actually just have the python code that will translate reel life movement 
 the code was harder then i thought i gave up and feeded the idea to claude the code isen't finished it just need the room mapping code and it will 
 be finished i wont count this in my hour counter cause claude did all the work
 
-
+**Total time spent: 3 hours**
