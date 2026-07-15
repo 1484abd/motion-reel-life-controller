@@ -49,4 +49,5 @@ and i actually just have the python code that will translate reel life movement 
 the code was harder then i thought i gave up and feeded the idea to claude the code isen't finished it just need the room mapping code and it will 
 be finished i wont count this in my hour counter cause claude did all the work
 
-**Total time spent: 2 hours**
+i finnaly finished it claude is shit i cant code with it okay i coded half no 90% of the python code with claude but still good thats good
+**Total time spent: 3 hours**
