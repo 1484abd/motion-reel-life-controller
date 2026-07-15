@@ -1,0 +1,7 @@
+Item,Quantity,Component,Description
+1,2,ESP32 DevKit,ESP32-WROOM Development Board
+2,3,HC-SR04,Ultrasonic Distance Sensor
+3,1,MPU6050,6-Axis IMU
+4,1,SG90 Servo,180 Degree Servo
+5,1,128x64 SPI OLED,OLED Display
+6,5,Push Button,Momentary Push Button
