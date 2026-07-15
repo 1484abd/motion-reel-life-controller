@@ -1,7 +1,7 @@
 <img width="1920" height="1080" alt="main" src="https://github.com/user-attachments/assets/e0ec8970-5cae-4c30-8b93-c01d675d0af1" />
 
 
-thats what the project should look like while being used (i know i am bad in blender and thats a projector) so what sould this project will do?
+thats what the project should look like while being used (i know i am bad in blender and thats a projector) so what should this project will do?
 and how does it work?
 
 this project start with the idea of being able to play games by moving its like vr but not like it 
