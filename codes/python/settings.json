@@ -1,0 +1,7 @@
+{
+  "device_name": "Headset",
+  "port": "COM5",
+  "mapper_port": "COM6",
+  "mouse_sensitivity": 3.0,
+  "movement_sensitivity": 0.048
+}
