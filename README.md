@@ -17,4 +17,3 @@ so i thought about a cool idea of how to can i play games in my house in real li
 | Push Button  |        5 | Momentary Push Button | 4 headset + 1 start |
 | Battery      |        2 | 5V USB power bank     | Example             |
 | Jumper Wires |        — | Male/Female           | As needed           |
-btw this bom is made by ai so i am sorry
