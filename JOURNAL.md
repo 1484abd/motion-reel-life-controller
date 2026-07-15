@@ -28,5 +28,6 @@ now it looks like this :
 now its perfect and we can work with it i think its the finishing idea
 
 now i will work on the room mapper code. i just learned the basics of the code didnt finish it.
+
 **Total time spent: 5 hours**
 # july 15:coding
